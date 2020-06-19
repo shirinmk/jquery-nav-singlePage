@@ -1,1 +1,28 @@
 Points) sometime for path , you need type "./" means current path
+
+Points) I created folder in my computer 
+git init
+git status
+git add .
+git commit -m "somethin"
+git push --set-upstream https://github.com/shirinmk/jquery-nav-singlePage.git master
+Attention)to the folder that I created on github
+Attention) all words must be write otherwise not working
+
+
+P) font-wight make text tick
+align-item: makes item alignment top center bottom
+justify-content : make space between
+margin: 0 auto : make element in the center of singlePage
+
+P) text-decoration: is for uncerline
+P) list-style is for bolet
+Q) difference inline and inline-block??
+
+P) having underline coming and leaving slowly with transition
+
+Q) explain jquery code?
+
+Q) why my contact not show active and begining????
+
+

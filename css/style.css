@@ -1,0 +1,84 @@
+*{
+   box-sizing: border-box; 
+}
+
+/* change whole page size and font */
+html,body{
+    margin: 0px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+        background-color: rgb(155, 121, 187);
+        padding: 15px;
+        /* cause header to be fix and on to p of everything */
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+
+}
+#header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.logo{
+    font-weight: 700;
+    font-size: 34px;
+    color: #fff;
+    text-decoration: none;
+}
+h2{
+    font-size: 36px;
+}
+.container_row{
+    padding: 100px 15px;
+    background-color: #75ffcf;
+}
+#home{
+    background-color: tomato;
+}
+#about{
+    background-color: blueviolet;
+}
+#services{
+    background-color: yellow;
+}
+#contact{
+    background-color: brown;
+}
+.main_menu{
+
+
+}
+.main_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.main_menu ul li{
+    font-size: 18px;
+    display: inline-block;
+    margin: 0 0 0 20px;
+}
+.main_menu ul li a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+.main_menu ul li:hover a,
+.main_menu ul li a.active
+{
+    border-bottom: 2px solid white;
+}
