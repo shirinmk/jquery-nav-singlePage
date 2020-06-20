@@ -1,11 +1,12 @@
 $(document).ready(function(){
+    var headerHeight = $('header').outerHeight();// the height of header
     $('.main_menu ul li a').click(function(event){
         $('.main_menu ul li a').removeClass('active');
         $(this).addClass('active');
         thisAttrHref = $(this).attr('href');
-        thisAttrHrefoffset = $(thisAttrHref).offset().top;
+        thisAttrHrefoffset = $(thisAttrHref).offset().top - headerHeight;
         $('html,body').animate({
-          scrollTop:thisAttrHrefoffset});
+          scrollTop:thisAttrHrefoffset},1000);
           event.preventDefault();
 
     });
@@ -13,7 +14,7 @@ $(document).ready(function(){
 // this is for windows you use scroll baar
 $(window).scroll(function(){
 $('.container_row').each(function(){
-    containerRowTop = $(this).offset().top - 50
+    containerRowTop = $(this).offset().top - 20;
     if($(document).scrollTop()> containerRowTop){
         thisOfs = $(this).attr('id');
         $('.container_row').removeClass('active');
